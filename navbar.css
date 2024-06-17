@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hamburger{
+    display: none;
+}
+
+.hamburger .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    border-radius: 5px;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+    min-height: 50px;
+    height: 50px;
+    max-height: 51px;
+    
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+
+    z-index: 2;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    height: 8vh;
+    min-height: 70px;
+    width: 1250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background: rgba(50, 50, 50, 0.7);
+    backdrop-filter: blur(20px);
+
+    border-radius: 12px;
+
+    padding: 0.5em 1em;
+    margin: 2vh;
+}
+
+/*------- logo -------*/
+header nav .logo-con{
+    display: block;
+}
+
+header nav .logo-con h1{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+header nav .logo-con img{
+    display: none;
+}
+
+/*------- menu -------*/
+header nav .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav .navbar-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+
+    border-radius: 12px;
+    margin: 0 0.5em;
+    cursor: pointer;
+    transition: 0.4s all;
+    border: 2px solid transparent;
+
+    transition: all 0.3s ease;
+}
+
+header nav .navbar-list li a:hover{
+    background-color: rgb(85, 85, 85);
+}
+
+header nav .navbar-list li.active{
+    background-color: rgb(85, 85, 85);
+    border: 2px solid rgb(30, 158, 69);
+}
+
+header nav .navbar-list li a{
+    padding: 0.5em 0.6em;
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/*------- call btn -------*/
+header nav li .call-btn,header nav .call-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav li .call-btn a,header nav .call-btn a{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 12px;
+    padding: 0.4em 0.8em;
+    background-color: rgb(30, 158, 69);
+    border: 3px solid black;
+    outline: 2px solid rgb(30, 158, 69);
+
+    text-decoration: none;
+
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    color: white;
+
+    transition: 0.4s all;
+}
+
+header nav li .call-btn{
+    display: none;
+}
+
+header nav .call-btn a:hover{
+    background-color: green;
+    border: 3px solid green;
+    outline: 2px solid green;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    header{
+        width: 100vw;
+        min-height: calc(70px + 10px + 10px);
+        height: auto;
+        top: 0;
+    }
+    header nav{
+        height: 8vh;
+        min-height: 70px;
+        width: 96%;
+        margin: 10px 0;
+    }
+    
+}
+
+@media only screen and (max-width: 800px){
+    header nav li .call-btn{
+        display: block;
+    }
+
+    header nav > .call-btn{
+        display: none;
+    }
+
+    header nav > .call-btn a{
+        display: none;
+    }
+
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger .bar{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: rotate(45deg) translateY(11.5px); 
+    }  
+    .hamburger.active .bar:nth-child(3){
+    transform: rotate(-45deg) translateY(-11.5px); 
+    }
+
+    header{
+        width: 100vw;
+        min-height: calc(70px + 10px + 10px);
+        
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    header nav{
+        height: 8vh;
+        min-height: 70px;
+        width: 96%;
+        margin: 10px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        background: rgba(50, 50, 50, 0.7);
+        backdrop-filter: blur(20px);
+
+        border-radius: 12px; /* ko kliknem na hamburger se naj spremeni v border-radius: 16px 16px 0 0;*/
+
+        padding: 0.5em 1em;
+
+        z-index: 2;
+    }
+
+    header nav.active{
+        border-radius: 16px 16px 0 0;
+        z-index: 2;
+        transition: 0.2s;
+    }
+
+    /*------- logo -------*/
+    header nav .logo-con{
+        display: block;
+    }
+
+    header nav .logo-con h1{
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    header nav .logo-con img{
+        display: none;
+    }
+
+    /*------- menu -------*/
+    header nav .navbar-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(50, 50, 50, 0.7);
+
+        border-radius: 0 0 12px 12px;
+        
+        padding: 0 0 0.5vh 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    header nav .navbar-list.active{
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transition: 0.2s;
+    }
+
+    header nav .navbar-list li{
+        width: 96%;
+        height: 9vh;
+        margin: .5vh 0;
+    }
+
+    header nav .navbar-list li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav .navbar-list li:hover{
+        background-color: rgba(75, 75, 75,0.8);
+    }
+
+    header nav .navbar-list li:last-child:hover{
+        background-color: transparent;
+    }
+
+    header nav .navbar-list li.active{
+        background-color: rgba(75, 75, 75,0.8);
+        border: 2px solid rgb(30, 158, 69);
+    }
+
+    header nav .navbar-list li a{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: 200;
+        font-size: 1em;
+        color: white;
+    }
+
+    /*------- call btn -------*/
+    header nav li .call-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 100%;
+    }
+
+    header nav .call-btn a{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 12px;
+        padding: 0.4em 0.8em;
+        background-color: rgb(30, 158, 69);
+        border: 3px solid black;
+        outline: 2px solid rgb(30, 158, 69);
+
+        text-decoration: none;
+
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: 400;
+        color: white;
+
+        transition: 0.4s all;
+    }
+
+    header nav .call-btn a:hover{
+        background-color: green;
+        border: 3px solid green;
+        outline: 2px solid green;
+    }
+}
