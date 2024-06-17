@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dem-tap</title>
+    <link rel="icon" type="img/png" href="assets/logo-tab.png">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Swiiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <div class="ozadje">
+        <header>
+            <nav>
+                <div class="logo-con">
+                    <img src="" alt="logo">
+                    <H1>TAP-DEMŠAR</H1>
+                </div>
+                
+                <ul class="navbar-list">
+                    <li class="active"><a class="nav-link" href="index.html#about">O nas</a></li>
+                    <li><a class="nav-link" href="index.html#projects">Projekti</a></li>
+                    <li><a class="nav-link" href="index.html#services">Storitve</a></li>
+                    <li><a class="nav-link" href="index.html#contact">Kontakt</a></li>
+                    <li>
+                        <div class="call-btn">
+                            <a class="nav-link" href="tel:184755555">Pokliči</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="call-btn">
+                    <a href="tel:184755555">Pokliči</a>
+                </div>
+                
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+    </header>
+    <section class="about" id="about">
+        <div class="about-con">
+            <div class="l-col">
+                <div class="img-col">
+                    <div class="s-img">
+                        <img src="WhatsApp Image 2024-06-04 at 17.54.17_03013493.jpg" alt="">
+                    </div>
+                    <div class="b-img">
+                        <img src="2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="img-col">
+                    <div class="b-img">
+                        <img src="3.jpg" alt="">
+                    </div>
+                    <div class="s-img">
+                        <img src="6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="r-col">
+                <h1>Tapetništvo Demšar</h1>
+                <p>Smo podjetje, ki je nastalo iz želje po izdelovanju in oblikovanju kakovostnega oblazinjenega pohištva.  Vizijo naših strank tako oblikujemo v končni izdelek, ki je prilagojen njihovim željam in potrebam. Stremimo k ustvarjanju dolgoročnega in stabilnega sodelovanja z našimi strankami.</p>
+                <p>Našim izdelkom zaupajo tako doma kot v tujini.</p>
+                <p>
+                    Z dovoljenjem Urbana Posedija (splošno tapetništvo Urban Posedi) nadaljujemo tudi njegov program izdelave sedežnih garnitur, pri čemer uporabljamo vrhunske materiale in tehnologije, ki zagotavljajo visoko kakovost in udobje. Naše izkušnje in strokovno znanje nam omogočajo, da ustvarjamo po meri narejene sedežne garniture, ki se popolnoma prilegajo vašemu prostoru in željam. Urban Posedi se vedno trudi preseči pričakovanja svojih strank z edinstvenimi oblikovalskimi rešitvami in natančno izvedbo, kar zagotavlja dolgotrajno zadovoljstvo in vzdržljivost izdelkov.</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="projects-con">
+            <h1>Naši projekti</h1>
+            <p>Ker slika pove več kot tisoč besed, vas vabimo, da si ogledate naše izdelke skozi fotografije ...</p>
+            
+            <!-- Izbira -->
+            <div class="tabs">
+                <div class="inputs">
+                    <input id="tab-1" type="radio" name="tab" checked />
+                    <label for="tab-1">Vse</label>
+                    
+                    <input id="tab-2" type="radio" name="tab" />
+                    <label for="tab-2">Sedežne garniture</label>
+                    
+                    <input id="tab-3" type="radio" name="tab" />
+                    <label for="tab-3">Stoli</label>
+                    
+                    <input id="tab-4" type="radio" name="tab" />
+                    <label for="tab-4">Ostali izdelki</label>
+                </div>
+    
+                <div class="content">
+                    <div class="item active" id="content-1">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                        <img src="assets/img/projects/other/other-1-before.jpg" alt="">
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-1-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-one-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-one-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-2-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-2-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-2-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-2-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+    
+                    <div class="item" id="content-2">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-con"></div>
+                                    <div class="img-con"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-con"></div>
+                                    <div class="img-con"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+    
+                    <div class="item" id="content-3">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-one-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-one-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-2-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/chairs/chair-2-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+    
+                    <div class="item" id="content-4">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-1-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-1-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-2-before.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-con">
+                                        <img src="assets/img/projects/other/other-2-after.jpg" alt="">
+                                        <div class="caption">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="services-con">
+            <h2>Kaj lahko storimo za vas?</h2>
+            <p>Ponudimo Vam lahko širok asortiman storitev. Nekatere storitve spodaj morda niso zajete in jih lahko za vas vseeno kvalitetno opravimo, tako, da vas naprošamo, da nas za konkretne primere kontaktirate. </p>
+            <div class="service-icons">
+                <div class="service-con">
+                    <div class="icon-con">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h6>Oblačenke pohištva</h6>
+                </div>
+                <div class="service-con">
+                    <div class="icon-con">
+                        <img src="assets/couch.png" alt="" width="96px">
+                    </div>
+                    <h6>Obnova starega pohištva</h6>
+                </div>
+                <div class="service-con">
+                    <div class="icon-con">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+                    <h6>Navtika</h6>
+                </div>
+                <div class="service-con">
+                    <div class="icon-con">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <h6>Avtotapetništvo</h6>
+                </div>
+                <div class="service-con">
+                    <div class="icon-con">
+                        <img src="assets/chair.png" alt="" width="96px">
+                    </div>
+                    <h6>Ostali izdelki</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="big-image"></div>
+    <section class="contact" id="contact">
+        <div class="contact-con">
+            <h2>Stopimo v stik</h2>
+            <p>Za dodatna vprašanja, pojasnila ali naročila, smo vam na voljo na spodnjih naslovih. Veseli bomo tudi vašega osebnega obiska!</p>
+            <div class="info-msg-con">
+                <div class="info-con">
+                    <h3>Sedež podjetja</h3>
+                    <p>Šentjošt nad Horjulom 24</p>
+                    <p>1354 Horjul</p>
+                    <p>Slovenija</p>
+
+                    <h3>Kontakt</h3>
+                    <p>Robi Demšar : +386 (0)31 335 443</p>
+                    <p>Boštjan Denmsar : +386 (0)40 822 171</p>
+                    <p>info@Dem-tap.si</p>
+
+                    <h3>Socialna omrežja</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100068485462562" target="_blank">
+                            <div class="icon-con">
+                                <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/tapetnistvodemtap?igsh=MTliM21ranZyNjgzbw==" target="_blank">
+                            <div class="icon-con">
+                                <svg  viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+                                    <title>instagram [#167]</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs>
+                                
+                                </defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+                                
+                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>                     
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="msg-con">
+                    <h3>Pošljite sporočilo</h3>
+                    <form
+                        action="https://formspree.io/f/xeqyyvgb"
+                        method="POST"
+                        class="input-group"
+                        >
+                        
+                        <label for="fname" class="label">Ime:</label>
+                        <input type="text" id="fname" name="fname" class="input">
+                    
+                        <label for="lname" class="label">Priimek:</label>
+                        <input type="text" id="lname" name="lname" class="input">
+            
+                        <label for="email" class="label">Vaša E-pošta:</label>
+                        <input type="email" name="email" id="email" class="input"><br>
+
+                        <label for="message" class="label">Sporočilo:</label>
+                        <textarea name="message" class="textarea" ></textarea><br>
+
+                        <!-- your other form fields go here -->
+                        <button type="submit" class="send">Pošljite sporočilo</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.1331817278433!2d14.217674376630722!3d46.02849119561144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ada3ef395d155%3A0x9a89d56d9d4ca090!2s%C5%A0entjo%C5%A1t%20nad%20Horjulom%2024%2C%201354%20Horjul!5e0!3m2!1ssl!2ssi!4v1718533089838!5m2!1ssl!2ssi"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    style="border: 0;"
+                    frameborder="0">
+                </iframe>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-con">
+            <div class="f-col">
+                <h3>Dem-tap</h3>
+                <p>| 
+                    <a href="#about">O nas</a> | 
+                    <a href="#projects">Projekti</a> | 
+                    <a href="#services">Storitve</a> | 
+                    <a href="#contact">Kontakt</a> |
+                </p>
+                <div class="icon-con">
+                    <a href="https://www.facebook.com/profile.php?id=100068485462562" target="_blank">
+                            <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"/>
+                            </svg>
+                    </a>
+                    <a href="https://www.instagram.com/tapetnistvodemtap?igsh=MTliM21ranZyNjgzbw==" target="_blank">
+                        <svg  viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>instagram [#167]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+                        
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+                        
+                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>                     
+                    </a>
+                </div>
+                <p>Dem-tap.si
+                   | 2024 © Vse pravice pridržan</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const defaultOffset = 0;
+    const offset100 = 100;
+
+    // Funkcija za posodobitev aktivnega elementa v navigacijskem baru
+    function updateActiveNavLink() {
+        // Poišči trenutno vidni ciljni element glede na položaj pomika
+        let scrollPosition = window.scrollY + offset100;
+
+        // Pojdi čez vse sekcije in preveri njihov položaj glede na vrh strani
+        navLinks.forEach(link => {
+            const targetId = link.getAttribute('href').split('#')[1];
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const sectionTop = targetElement.offsetTop;
+                const sectionHeight = targetElement.offsetHeight;
+
+                if (scrollPosition >= sectionTop - offset100 && scrollPosition < sectionTop + sectionHeight - defaultOffset) {
+                    // Našli smo trenutno vidno sekcijo, posodobimo aktivni element v navigacijskem baru
+                    navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
+                    link.parentElement.classList.add('active');
+                }
+            }
+        });
+    }
+
+    // Dodaj dogodek 'scroll' za posodobitev aktivnega elementa med pomikanjem
+    window.addEventListener('scroll', updateActiveNavLink);
+
+    // Dodaj dogodek 'click' za gladko pomikanje na cilj
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prepreči privzeto vedenje povezave
+
+            // Odstrani 'active' razred iz vseh povezav
+            navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
+
+            // Dodaj 'active' razred na kliknjen element
+            this.parentElement.classList.add('active');
+
+            // Poišči ciljni element
+            const targetId = link.getAttribute('href').split('#')[1];
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                let offset = defaultOffset;
+                // Preveri, ali je ciljni element 'about' ali 'projects'
+                if (targetId === 'projects') {
+                    offset = defaultOffset;
+                } else if (targetId === 'services' || targetId === 'contact' || targetId === 'about') {
+                    offset = offset100;
+                }
+
+                // Izračunaj pozicijo za pomik (uporaba offseta)
+                const offsetPosition = targetElement.offsetTop - offset;
+
+                // Izvedi gladko pomikanje
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Zaženi posodobitev aktivnega elementa ob naložitvi strani
+    updateActiveNavLink();
+});
+
+    </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Poiščemo vse povezave (elemente <a>) znotraj povezav v nogi
+    var links = document.querySelectorAll('.footer .footer-con .f-col a');
+    const defaultOffset = 0; 
+    const offset100 = 100; 
+    // Za vsako povezavo dodamo poslušalca dogodkov (event listener)
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Preprečimo privzeto vedenje povezave (ne pomikamo se takoj na vrh strani)
+
+            // Dobimo ciljni ID iz atributa href
+            var targetId = link.getAttribute('href').substring(1); // Izrežemo # iz ID-ja
+
+            // Poiščemo ciljni element
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                        let offset = defaultOffset;
+                        // Preveri, ali je ciljni element 'about' ali 'projects'
+                        if (targetId === 'projects') {
+                            offset = defaultOffset;
+                        } else if (targetId === 'services' || targetId === 'contact' || targetId === 'about') {
+                            offset = offset100;
+                        } 
+
+                        // Izračunaj pozicijo za pomik (uporaba offseta)
+                        const offsetPosition = targetElement.offsetTop - offset;
+
+                        // Izvedi gladko pomikanje
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+        });
+    });
+});
+
+    </script>
+    !-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+        });
+    </script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav_menu = document.querySelector("header nav .navbar-list");
+        const head = document.querySelector("header nav");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            nav_menu.classList.toggle("active");
+            head.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            nav_menu.classList.remove("active");
+            head.classList.remove("active"); // This line was missing
+        }));
+
+    </script>
+    <script>
+        // JavaScript za upravljanje tabov
+        const tabs = document.querySelectorAll('.inputs input[type="radio"]');
+        const tabContents = document.querySelectorAll('.content .item');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('change', function() {
+                // Skrij vsebino vseh tabov
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Prikazi samo izbrano vsebino
+                const selectedTabId = this.getAttribute('id');
+                const contentToShow = document.getElementById('content-' + selectedTabId.slice(-1));
+                contentToShow.classList.add('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Funkcija za inicializacijo povečave slik
+            function setupImageZoom(swiper) {
+                const imgContainers = swiper.querySelectorAll('.img-con');
+
+                imgContainers.forEach(imgContainer => {
+                    const img = imgContainer.querySelector('img');
+                    const caption = imgContainer.querySelector('.caption');
+
+                    // Dodaj dogodek 'click' na caption
+                    caption.addEventListener('click', function() {
+                        // Preveri, ali je razširjena slika že prikazana
+                        const expandedImage = document.querySelector('.image-expanded');
+                        if (expandedImage) {
+                            // Če je razširjena slika že prikazana, jo odstrani
+                            document.body.removeChild(expandedImage);
+                            document.body.style.overflow = ''; // Ponovno omogoči drsenje ozadja
+                        }
+
+                        // Ustvari element za razširjeno sliko
+                        const newExpandedImage = document.createElement('div');
+                        newExpandedImage.classList.add('image-expanded');
+
+                        // Ustvari sliko z istim virom kot originalna slika
+                        const expandedImg = document.createElement('img');
+                        expandedImg.src = img.src;
+                        expandedImg.alt = img.alt;
+
+                        // Dodaj razširjeno sliko v element
+                        newExpandedImage.appendChild(expandedImg);
+
+                        // Dodaj razširjeno sliko na konec body elementa
+                        document.body.appendChild(newExpandedImage);
+
+                        // Onemogoči drsenje ozadja, ko je razširjena slika prikazana
+                        document.body.style.overflow = 'hidden';
+
+                        // Dodaj dogodek 'click' na razširjeno sliko, da jo zapremo
+                        newExpandedImage.addEventListener('click', function() {
+                            document.body.removeChild(newExpandedImage);
+                            document.body.style.overflow = ''; // Ponovno omogoči drsenje ozadja
+                        });
+                    });
+                });
+            }
+
+            // Pridobi vse content elemente
+            const contents = document.querySelectorAll('.content .item');
+
+            // Za vsak content element, inicializiraj povečavo slik v .swiper galerijah
+            contents.forEach(content => {
+                const swiper = content.querySelector('.swiper');
+                if (swiper) {
+                    // Initializiraj povečavo slik samo za tisti swiper, ki je trenutno viden (aktivni zavihek)
+                    content.addEventListener('click', function() {
+                        setupImageZoom(swiper);
+                    });
+                }
+            });
+        });
+        </script>
+</body>
+</html>
