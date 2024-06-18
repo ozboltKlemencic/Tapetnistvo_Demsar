@@ -248,8 +248,8 @@ section.about .about-con .r-col p{
     
     
     section.about .about-con .l-col .img-col .s-img{
-        width: 40vw;
-        min-width: 180px;
+        width: 45vw;
+        min-width: 45vw;
         height: 30vw;
         min-height: 150px;
     
@@ -268,16 +268,16 @@ section.about .about-con .r-col p{
     }
     
     section.about .about-con .l-col .img-col:nth-child(1) .s-img{
-        margin-bottom: 20px;
+        margin-bottom: 2vw;
     }
     
     section.about .about-con .l-col .img-col:nth-child(2) .b-img{
-        margin-bottom: 20px;
+        margin-bottom: 2vw;
     }
     
     section.about .about-con .l-col .img-col .b-img{
-        width: 40vw;
-        min-width: 180px;
+        width: 45vw;
+        min-width: 45vw;
         height: 35vw;
         min-height: 180px;
     
