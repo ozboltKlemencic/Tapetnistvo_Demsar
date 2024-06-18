@@ -623,7 +623,6 @@ section.about .about-con .r-col p{
 
 .swiper .swiper-slide .img-con:hover .caption{
     transform: translateY(0);
-    min-height: 400px;
     cursor: pointer;
 }
 
