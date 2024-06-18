@@ -210,7 +210,7 @@ header nav .call-btn a:hover{
         max-height: calc(70px + 10px + 10px + 10px);
         position: sticky;
         position: -webkit-sticky;
-        top: 0px;
+        top: 10px;
 
         display: flex;
         align-items: center;
@@ -223,7 +223,7 @@ header nav .call-btn a:hover{
         min-height: 70px;
         max-height:80px;
         width: 96%;
-        margin: 10px 0;
+        margin: 0px 0;
 
         display: flex;
         align-items: center;
