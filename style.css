@@ -1823,7 +1823,7 @@ section.about .about-con .r-col p{
 /* ---------------------------------------------------------- FOOTER */
 .footer{
     width: 100vw;
-    min-height: 250px;
+    min-height: 50px;
     height: auto;
 
     display: flex;
@@ -1836,10 +1836,11 @@ section.about .about-con .r-col p{
     width: 1200px;
 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
     column-gap: 2em;
+    padding: 1em 0;
 }
 
 .footer .footer-con .f-col{
@@ -1853,7 +1854,6 @@ section.about .about-con .r-col p{
     font-size: 1.6em;
     border-bottom: 3px solid rgb(38, 228, 64);
     text-align: center;
-    margin-bottom: 1em;
     padding-bottom: 0.2em;
     font-weight: 600;
 }
@@ -1953,9 +1953,5 @@ section.about .about-con .r-col p{
     .footer .footer-con .f-col p:last-child{
         font-size: 0.8em;
         color: rgb(71, 66, 66);
-    }
-    .footer .footer-con .f-col .icon-con{
-        padding-top: 1.5em;
-        margin-top: -1em;
     }
 }
