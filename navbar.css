@@ -1,79 +1,67 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
 
-.hamburger .bar{
+.hamburger .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     background: white;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
-header{
+header {
     width: 100vw;
     height: auto;
     min-height: 50px;
     height: 50px;
     max-height: 51px;
-    
-
     position: sticky;
-    position: -webkit-sticky;
     top: 20px;
-
     z-index: 2;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header nav{
+header nav {
     height: 8vh;
     min-height: 70px;
     max-height: 80px;
     width: 1250px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-
     background: rgba(50, 50, 50, 0.7);
     backdrop-filter: blur(20px);
-
     border-radius: 12px;
-
     padding: 0.5em 1em;
     margin: 2vh;
 }
 
-/*------- logo -------*/
-header nav .logo-con{
+header nav .logo-con {
     display: block;
 }
 
-header nav .logo-con h1{
+header nav .logo-con h1 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.2em;
     color: white;
 }
 
-header nav .logo-con img{
+header nav .logo-con img {
     display: none;
 }
 
-/*------- menu -------*/
-header nav .navbar-list{
+header nav .navbar-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,39 +69,32 @@ header nav .navbar-list{
     list-style: none;
 }
 
-header nav .navbar-list li{
+header nav .navbar-list li {
     display: flex;
     align-items: center;
     justify-content: center;
-
-  
-
     border-radius: 12px;
     margin: 0 0.5em;
     cursor: pointer;
-    transition: 0.4s all;
-    border: 2px solid transparent;
-
     transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
-header nav .navbar-list li a:hover{
+header nav .navbar-list li a:hover {
     background-color: rgb(85, 85, 85);
 }
 
-header nav .navbar-list li.active{
-    background-color: rgb(85, 85, 85);
+header nav .navbar-list li.active {
+    background-color: rgb(46, 45, 45);
     border: 2px solid rgb(30, 158, 69);
 }
 
-header nav .navbar-list li a{
+header nav .navbar-list li a {
     padding: 0.5em 0.6em;
     border-radius: 12px;
-
     width: 100%;
     height: 100%;
     text-decoration: none;
-
     font-family: 'Archivo Black', sans-serif;
     font-weight: 200;
     font-size: 1em;
@@ -121,245 +102,125 @@ header nav .navbar-list li a{
     transition: all 0.3s ease;
 }
 
-/*------- call btn -------*/
-header nav li .call-btn,header nav .call-btn{
+header nav .call-btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header nav li .call-btn a,header nav .call-btn a{
+header nav .call-btn a {
     width: 100%;
     height: 100%;
-
     border-radius: 12px;
     padding: 0.4em 0.8em;
     background-color: rgb(30, 158, 69);
     border: 3px solid black;
     outline: 2px solid rgb(30, 158, 69);
-
     text-decoration: none;
-
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
     color: white;
-
     transition: 0.4s all;
 }
 
-header nav li .call-btn{
-    display: none;
-}
-
-header nav .call-btn a:hover{
+header nav .call-btn a:hover {
     background-color: green;
     border: 3px solid green;
     outline: 2px solid green;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1200px){
-    header{
-        width: 100vw;
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    header {
         min-height: calc(70px + 10px + 10px);
-        height: auto;
         top: 10px;
     }
-    header nav{
-        height: 8vh;
-        min-height: 70px;
+    header nav {
         width: 96%;
         margin: 10px 0;
     }
-    
 }
 
-@media only screen and (max-width: 800px){
-    header nav li .call-btn{
+
+
+@media only screen and (max-width: 800px) {
+    header {
+        min-height:none;
+        height: 10vh;
+
+        top: 1vh;
+    }
+    header nav {
+        min-height: none;
+        max-height: none;
+        width: 98%;
+        margin: 0;
+        border-radius: 12px;
+        padding: 0.5em 1em;
+        padding: 0.5em 1em;
+        margin: 0;
+    }
+    .hamburger {
         display: block;
     }
-
-    header nav > .call-btn{
-        display: none;
-    }
-
-    header nav > .call-btn a{
-        display: none;
-    }
-
-
-    .hamburger{
+    .hamburger .bar {
         display: block;
     }
-
-    .hamburger .bar{
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
-        transform: rotate(45deg) translateY(11.5px); 
-    }  
-    .hamburger.active .bar:nth-child(3){
-    transform: rotate(-45deg) translateY(-11.5px); 
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(11.5px);
     }
-
-    header{
-        width: 100vw;
-        min-height: calc(70px + 10px + 10px);
-        
-        position: sticky;
-        position: -webkit-sticky;
-        top: 1px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-11.5px);
     }
-
-    header nav{
-        height: 8vh;
-        min-height: 70px;
-        width: 98%;
-        margin: 0px 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-
-        background: rgba(50, 50, 50, 0.7);
-        backdrop-filter: blur(20px);
-
-        border-radius: 12px; /* ko kliknem na hamburger se naj spremeni v border-radius: 16px 16px 0 0;*/
-
-        padding: 0.5em 1em;
-
-        z-index: 2;
-    }
-
-    header nav.active{
+    header nav.active {
         border-radius: 16px 16px 0 0;
-        z-index: 2;
         transition: 0.2s;
     }
-
-    /*------- logo -------*/
-    header nav .logo-con{
-        display: block;
-    }
-
-    header nav .logo-con h1{
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 1.2em;
-        color: white;
-    }
-
-    header nav .logo-con img{
-        display: none;
-    }
-
-    /*------- menu -------*/
-    header nav .navbar-list{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    header nav .navbar-list {
         flex-direction: column;
-
         position: fixed;
         top: 70px;
         left: 0;
         width: 100%;
         background-color: rgba(50, 50, 50, 0.7);
-
         border-radius: 0 0 12px 12px;
-        
         padding: 0 0 0.5vh 0;
-        z-index: 1;
         opacity: 0;
         visibility: hidden;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
     }
-
-    header nav .navbar-list.active{
+    header nav .navbar-list.active {
         visibility: visible;
         opacity: 1;
-        z-index: 1;
-        transition: 0.2s;
     }
-
-    header nav .navbar-list li{
+    header nav .navbar-list li {
         width: 96%;
         height: 9vh;
-        margin: .5vh 0;
+        margin: 0.5vh 0;
     }
-
-    header nav .navbar-list li a{
+    header nav .navbar-list li a {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    header nav .navbar-list li:hover{
-        background-color: rgba(75, 75, 75,0.8);
+    header nav .navbar-list li:hover {
+        background-color: rgba(75, 75, 75, 0.8);
     }
-
-    header nav .navbar-list li:last-child:hover{
+    header nav .navbar-list li:last-child:hover {
         background-color: transparent;
     }
-
-    header nav .navbar-list li.active{
-        background-color: rgba(75, 75, 75,0.8);
-        border: 2px solid rgb(30, 158, 69);
-    }
-
-    header nav .navbar-list li a{
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-
-        font-family: 'Archivo Black', sans-serif;
-        font-weight: 200;
-        font-size: 1em;
-        color: white;
-    }
-
-    /*------- call btn -------*/
-    header nav li .call-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    header nav .call-btn {
         width: 50vw;
         height: 100%;
     }
-
-    header nav .call-btn a{
-        width: 100%;
-        height: 100%;
-
+    header nav .call-btn a {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        border-radius: 12px;
-        padding: 0.4em 0.8em;
-        background-color: rgb(30, 158, 69);
-        border: 3px solid black;
-        outline: 2px solid rgb(30, 158, 69);
-
-        text-decoration: none;
-
-        font-family: 'Archivo Black', sans-serif;
-        font-weight: 400;
-        color: white;
-
-        transition: 0.4s all;
     }
-
-    header nav .call-btn a:hover{
-        background-color: green;
-        border: 3px solid green;
-        outline: 2px solid green;
+    header nav > .call-btn {
+        display: none;
     }
 }
