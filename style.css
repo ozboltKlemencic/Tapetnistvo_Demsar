@@ -1544,8 +1544,9 @@ section.about .about-con .r-col p{
         font-size: 7vw;
         font-weight: 600;
     }
-    .contact .contact-con p{
+    .contact .contact-con > p{
         font-size: 4vw;
+        padding-bottom: 6vw;
     }
 
     .contact .contact-con .info-msg-con .info-con h3:first-child{
@@ -1880,6 +1881,10 @@ section.about .about-con .r-col p{
 
 .footer .footer-con .f-col p a:hover{
     color: green;
+}
+.footer .footer-con .f-col a{
+    width: 100%;
+    height: 100%;
 }
 
 .footer .footer-con .f-col .icon-con{
