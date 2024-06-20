@@ -166,12 +166,13 @@ section.about .about-con .r-col{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+
 }
 
 section.about .about-con .r-col h1{
     color: white;
     font-family: var(--main-font);
-    font-size: 2.6em;
+    font-size: clamp(0.1em, 2.5em ,3em);
     text-align: left;
 }
 
@@ -188,7 +189,7 @@ section.about .about-con .r-col p{
     section.about{
         width: 100vw;
         height: auto;
-        min-height: 800px;
+        min-height: 600px;
     
         display: flex;
         align-items: center;
@@ -217,7 +218,7 @@ section.about .about-con .r-col p{
         justify-content: center;
         flex-direction: row;
     
-        padding: 20px;
+        padding: 0px 10px 0px 10px;
         margin-top: 2vh;
     }
 
@@ -268,11 +269,11 @@ section.about .about-con .r-col p{
     }
     
     section.about .about-con .l-col .img-col:nth-child(1) .s-img{
-        margin-bottom: 2vw;
+        margin-bottom: 20px;
     }
     
     section.about .about-con .l-col .img-col:nth-child(2) .b-img{
-        margin-bottom: 2vw;
+        margin-bottom: 20px;
     }
     
     section.about .about-con .l-col .img-col .b-img{
@@ -308,7 +309,7 @@ section.about .about-con .r-col p{
     section.about .about-con .r-col h1{
         color: white;
         font-family: var(--main-font);
-        font-size: 2em;
+        font-size: 1.8em;
         text-align: center;
         margin: 1vh 0;
     }
@@ -316,9 +317,10 @@ section.about .about-con .r-col p{
     section.about .about-con .r-col p{
         color: rgb(195, 193, 193);
         font-family: var(--secondary-font);
-        font-size: 1.1em;
+        font-size: .9em;
         line-height: 1.2em;
-        text-align: center;
+        padding: 0 1em;
+        text-align: justify;
         margin-bottom: 1em;
     }
 }
@@ -688,7 +690,7 @@ section.about .about-con .r-col p{
                 rgba(0,0,0,1) 100%)
         ;
 
-        padding: 0 0 6vh 0;
+        padding: 0 0 8vh 0;
     }
     
     .projects .projects-con{
@@ -828,10 +830,12 @@ section.about .about-con .r-col p{
         background-color: #48fa8c; /* Prilagodi barvo aktivne pike glede na želje */
       }
     
-      .swiper .swiper-button-next,.swiper .swiper-button-prev {
-        color: #00ff00c7; /* Prilagodi barvo puščic glede na želje */
-        font-weight: 900;
-      }
+        .swiper .swiper-button-next,
+        .swiper .swiper-button-prev {
+            color: #00ff00c7;
+            font-weight: 500;
+            font-size: 10px; 
+        }
     
     .item {
         display: none;
@@ -999,7 +1003,7 @@ section.about .about-con .r-col p{
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 1.5em;
-        column-gap: 0.8em;
+        column-gap: 0.4em;
     
         margin-top: 2em;
     }
@@ -1014,8 +1018,8 @@ section.about .about-con .r-col p{
     }
     
     .services .services-con .service-icons .service-con .icon-con{
-        width: 40vw;
-        height:  40vw;
+        width: 25vw;
+        height: 25vw;
     
         display: flex;
         align-items: center;
@@ -1034,7 +1038,10 @@ section.about .about-con .r-col p{
     
     .services .services-con .service-icons .service-con .icon-con i{
         color: black;
-        font-size: 4em;
+        font-size: 3em;
+    }
+    .services .services-con .service-icons .service-con .icon-con img{
+        width: 4em;
     }
     .services .services-con .service-icons .service-con h6{
         font-family: var(--main-font);
@@ -1388,7 +1395,7 @@ section.about .about-con .r-col p{
     .contact .contact-con{
         width: 96%;
         height: 100%;
-        padding: 1em;
+        padding: 2em 1em 1em 1em;
     }
 
     
@@ -1411,13 +1418,17 @@ section.about .about-con .r-col p{
         justify-content: flex-start;
         flex-direction: column;
     }
+
+    .contact .contact-con .info-msg-con .info-con h3:first-child{
+        margin: 2vw 0 0.2em 0;
+    }
     
     .contact .contact-con .info-msg-con .info-con h3{
         font-family: var(--main-font);
         font-size: 1.1em;
         color: rgba(37, 151, 37, 0.89);
     
-        margin: 1em 0 0.2em 0;
+        margin: 10vw 0 0.2em 0;
     }
     
     .contact .contact-con .info-msg-con .info-con p{
@@ -1425,8 +1436,6 @@ section.about .about-con .r-col p{
         font-size: 0.9em;
         line-height: 1em;
         color: rgb(255, 255, 255);
-    
-        
     }
     
     .contact .contact-con .info-msg-con .info-con .social-icons .icon-con svg {
@@ -1751,7 +1760,7 @@ section.about .about-con .r-col p{
 }
 
 .footer .footer-con .f-col .icon-con svg {
-    padding: 0.1em;
+    padding: 0.2em;
     height: 2em;
     width: 2em;
 }
@@ -1764,6 +1773,11 @@ section.about .about-con .r-col p{
 .footer .footer-con .f-col .icon-con svg:hover path{
     fill: rgb(28, 121, 40);
     transition: 0.3s all ease;
+}
+
+.footer .footer-con .f-col p:last-child{
+    font-size: 0.8em;
+    color: rgb(71, 66, 66);
 }
 
 @media only screen and (max-width: 800px){
@@ -1787,10 +1801,15 @@ section.about .about-con .r-col p{
     
     .footer .footer-con .f-col p a{
         padding: 0 0.5em;
+        font-size: 0.9em;
     }
 
     .footer .footer-con .f-col p:last-child{
-        font-size: 0.5em;
+        font-size: 0.8em;
         color: rgb(71, 66, 66);
+    }
+    .footer .footer-con .f-col .icon-con{
+        padding-top: 1.5em;
+        margin-top: -1em;
     }
 }
