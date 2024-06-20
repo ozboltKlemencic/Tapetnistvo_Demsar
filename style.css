@@ -314,7 +314,6 @@ section.about .about-con .r-col p{
         text-align: center;
         margin: 1vh 0;
         font-weight: 200;
-        letter-spacing: 1px;
     }
     
     section.about .about-con .r-col p{
@@ -727,7 +726,6 @@ section.about .about-con .r-col p{
         font-weight: 500;
         text-align: center;
         padding-top: 2vw;
-        letter-spacing: 1px;
     }
     
     .projects .projects-con p{
@@ -1104,7 +1102,6 @@ section.about .about-con .r-col p{
         font-size: 7vw;
         color: white;
         text-align: center;
-        letter-spacing: 1px;
         font-weight: 500;
     }
     
@@ -1172,7 +1169,6 @@ section.about .about-con .r-col p{
         font-size: 0.9em;
         text-align: center;
         padding: 0.5em 0.5em;
-        letter-spacing: 1px;
     }
 }
 
@@ -1547,7 +1543,6 @@ section.about .about-con .r-col p{
 
     .contact .contact-con h2{
         font-size: 7vw;
-        letter-spacing: 1px;
     }
     .contact .contact-con p{
         font-size: 4vw;
@@ -1561,7 +1556,6 @@ section.about .about-con .r-col p{
         font-family: var(--main-font);
         font-size: 5vw;
         color: rgba(37, 151, 37, 0.89);
-        letter-spacing: 1px;
     
         margin: 10vw 0 0.2em 0;
     }
@@ -1588,7 +1582,6 @@ section.about .about-con .r-col p{
     .contact .contact-con .info-msg-con .msg-con h3{
         text-align: center;
         font-size: 5vw;
-        letter-spacing: 1px;
     }
     
     .contact .contact-con .info-msg-con .msg-con form{
@@ -1860,7 +1853,6 @@ section.about .about-con .r-col p{
     text-align: center;
     margin-bottom: 1em;
     padding-bottom: 0.2em;
-    letter-spacing: 1px;
 }
 
 
