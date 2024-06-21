@@ -2110,6 +2110,7 @@ section.about .about-con .r-col p{
         width: 96%;
         height: auto;
         min-height: none;
+        padding-bottom: 1em;
     }
     
     .footer .footer-con .f-col{
@@ -2120,6 +2121,7 @@ section.about .about-con .r-col p{
     .footer .footer-con .f-col h3{
         font-family: var(--main-font);
         font-size: 1.4em;
+        padding-top: 0;
     }
     
     
