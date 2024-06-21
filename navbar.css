@@ -150,8 +150,8 @@ header nav .call-btn a:hover {
     .call-btn-mobile{
         display: block;
         position: fixed;
-        bottom: 1vw;
-        left: 1vw;
+        bottom: 2vw;
+        left: 2vw;
         height: 15vw;
         max-height: 65px;
         max-width: 65px;
@@ -168,7 +168,7 @@ header nav .call-btn a:hover {
 
     .call-btn-mobile a i{
         color: black;
-        font-size: 2em;
+        font-size: 1.8em;
     }
     header {
         min-height:none;
