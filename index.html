@@ -24,8 +24,23 @@
     <!-- Swiiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
+    <div class="loader">
+        <div class="loader-wrapper">
+            <div class="square" id="sq1"></div>
+            <div class="square" id="sq2"></div>
+            <div class="square" id="sq3"></div>
+            <div class="square" id="sq4"></div>
+            <div class="square" id="sq5"></div>
+            <div class="square" id="sq6"></div>
+            <div class="square" id="sq7"></div>
+            <div class="square" id="sq8"></div>
+            <div class="square" id="sq9"></div>
+        </div>
+      </div>
     <div class="ozadje">
         <header>
             <nav>
@@ -86,7 +101,7 @@
     <section class="projects" id="projects">
         <div class="projects-con">
             <h1>Naši projekti</h1>
-            <p>Ker slika pove več kot tisoč besed, si oglejte naše izdelke pred in po naši obdelavi...</p>
+            <p>Ker slika pove več kot tisoč besed, si oglejte naše izdelke pred in po nasi obdelavi...</p>
             
             <!-- Izbira -->
             <div class="tabs">
@@ -569,74 +584,74 @@
 
     <script>
        document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const defaultOffset = 0;
-    const offset100 = 100;
+        const navLinks = document.querySelectorAll('.nav-link');
+        const defaultOffset = 0;
+        const offset100 = 100;
 
-    // Funkcija za posodobitev aktivnega elementa v navigacijskem baru
-    function updateActiveNavLink() {
-        // Poišči trenutno vidni ciljni element glede na položaj pomika
-        let scrollPosition = window.scrollY + offset100;
+        // Funkcija za posodobitev aktivnega elementa v navigacijskem baru
+        function updateActiveNavLink() {
+            // Poišči trenutno vidni ciljni element glede na položaj pomika
+            let scrollPosition = window.scrollY + offset100;
 
-        // Pojdi čez vse sekcije in preveri njihov položaj glede na vrh strani
-        navLinks.forEach(link => {
-            const targetId = link.getAttribute('href').split('#')[1];
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                const sectionTop = targetElement.offsetTop;
-                const sectionHeight = targetElement.offsetHeight;
+            // Pojdi čez vse sekcije in preveri njihov položaj glede na vrh strani
+            navLinks.forEach(link => {
+                const targetId = link.getAttribute('href').split('#')[1];
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const sectionTop = targetElement.offsetTop;
+                    const sectionHeight = targetElement.offsetHeight;
 
-                if (scrollPosition >= sectionTop - offset100 && scrollPosition < sectionTop + sectionHeight - defaultOffset) {
-                    // Našli smo trenutno vidno sekcijo, posodobimo aktivni element v navigacijskem baru
-                    navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
-                    link.parentElement.classList.add('active');
+                    if (scrollPosition >= sectionTop - offset100 && scrollPosition < sectionTop + sectionHeight - defaultOffset) {
+                        // Našli smo trenutno vidno sekcijo, posodobimo aktivni element v navigacijskem baru
+                        navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
+                        link.parentElement.classList.add('active');
+                    }
                 }
-            }
-        });
-    }
+            });
+        }
 
     // Dodaj dogodek 'scroll' za posodobitev aktivnega elementa med pomikanjem
     window.addEventListener('scroll', updateActiveNavLink);
 
     // Dodaj dogodek 'click' za gladko pomikanje na cilj
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prepreči privzeto vedenje povezave
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prepreči privzeto vedenje povezave
 
-            // Odstrani 'active' razred iz vseh povezav
-            navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
+                // Odstrani 'active' razred iz vseh povezav
+                navLinks.forEach(nav => nav.parentElement.classList.remove('active'));
 
-            // Dodaj 'active' razred na kliknjen element
-            this.parentElement.classList.add('active');
+                // Dodaj 'active' razred na kliknjen element
+                this.parentElement.classList.add('active');
 
-            // Poišči ciljni element
-            const targetId = link.getAttribute('href').split('#')[1];
-            const targetElement = document.getElementById(targetId);
+                // Poišči ciljni element
+                const targetId = link.getAttribute('href').split('#')[1];
+                const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                let offset = defaultOffset;
-                // Preveri, ali je ciljni element 'about' ali 'projects'
-                if (targetId === 'projects') {
-                    offset = defaultOffset;
-                } else if (targetId === 'services' || targetId === 'contact' || targetId === 'about') {
-                    offset = offset100;
+                if (targetElement) {
+                    let offset = defaultOffset;
+                    // Preveri, ali je ciljni element 'about', 'projects', 'services' ali 'contact'
+                    if (targetId === 'projects') {
+                        offset = defaultOffset;
+                    } else if (targetId === 'services' || targetId === 'contact' || targetId === 'about') {
+                        offset = offset100;
+                    }
+
+                    // Izračunaj pozicijo za pomik (uporaba offseta)
+                    const offsetPosition = targetElement.offsetTop - offset;
+
+                    // Izvedi gladko pomikanje
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 }
-
-                // Izračunaj pozicijo za pomik (uporaba offseta)
-                const offsetPosition = targetElement.offsetTop - offset;
-
-                // Izvedi gladko pomikanje
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
+            });
         });
-    });
 
-    // Zaženi posodobitev aktivnega elementa ob naložitvi strani
-    updateActiveNavLink();
-});
+        // Zaženi posodobitev aktivnega elementa ob naložitvi strani
+        updateActiveNavLink();
+    });
 
     </script>
     <script>
@@ -716,6 +731,14 @@ document.addEventListener("DOMContentLoaded", function() {
             head.classList.remove("active"); // This line was missing
         }));
 
+    </script>
+    <script>
+       $(window).on("load", function() {
+            $(".loader").fadeOut("slow", function() {
+                // Ensure the loader is completely removed from the DOM
+                $(this).remove();
+            });
+        });
     </script>
     <script>
         // JavaScript za upravljanje tabov
