@@ -25,7 +25,7 @@ header {
     max-height: 51px;
     position: sticky;
     top: 20px;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,7 @@ header nav {
     border-radius: 12px;
     padding: 0.5em 1em;
     margin: 2vh;
+    z-index: 3;
 }
 
 header nav .logo-con {
@@ -149,9 +150,11 @@ header nav .call-btn a:hover {
     .call-btn-mobile{
         display: block;
         position: fixed;
-        bottom: 2vw;
-        left: 2vw;
+        bottom: 1vw;
+        left: 1vw;
         height: 15vw;
+        max-height: 65px;
+        max-width: 65px;
         width: 15vw;
         border-radius: 50%;
         background: rgb(30, 158, 69);
@@ -160,11 +163,12 @@ header nav .call-btn a:hover {
         justify-content: center;
         padding: 2vw;
         z-index: 100;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .call-btn-mobile a i{
         color: black;
-        font-size: 6vw;
+        font-size: 2em;
     }
     header {
         min-height:none;
