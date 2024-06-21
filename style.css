@@ -339,6 +339,9 @@ section.about .about-con .r-col p{
         padding: 0 1vw;
         margin-top: 2vh;
 
+        animation: none;
+
+        animation: izGor 0.8s ease 0.5s both;
     }
 
     section.about .about-con .l-col{
@@ -631,6 +634,17 @@ section.about .about-con .r-col p{
     from{
         opacity: 0;
         transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes izGor {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
     }
     to{
         opacity: 1;
